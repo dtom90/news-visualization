@@ -4,7 +4,8 @@ import os
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash, json, jsonify
 
-
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
 
 
 app = Flask(__name__)
